@@ -97,10 +97,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.content {
-    text-align: center;
-    margin:auto;
-    margin-top: 10em;
+
+iframe {
+    position:absolute;
+    top:50%;
+    margin-top: -360px;
+    left:50%;
+    margin-left: -480px;
 }
 
 
