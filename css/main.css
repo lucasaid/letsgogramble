@@ -97,27 +97,266 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background:url(../img/background.png);
+    font-size:16px;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size:4em;
+    color:white;
+    margin:auto;
+    text-align: center;
+    margin-top:10%;
+    display:block;
+    text-shadow:3px 3px black;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size:2em;
+    color:white;
+    margin:auto;
+    text-align: center;
+    margin-top:1em;
+    display:block;
+    text-shadow:3px 3px black;
+}
 img {
     text-align: center;
     margin:auto;
+    margin-top:1em;
     display:block;
-    margin-top:10%;
+    transform: scale(0.9);
     cursor:pointer;
-    animation-name: floating;
-    -webkit-animation-name: floating;
 
-    animation-duration: 1.5s;   
-    -webkit-animation-duration: 1.5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
 }
+.social {
+    text-align: center;
+    margin-top:1em;
+}
+.size16x16 {
+  font-size: 16px;
+}
+
+/* facebook icon */
+.icon-facebook {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #3b5998;
+  border-radius: 0.3125em;
+  height: 2.5em;
+  width: 2.5em;
+  position: relative;
+  overflow: hidden;
+}
+.icon-facebook .f-tail, .icon-facebook .f-crossbar, .icon-facebook .f-top {
+  position: absolute;
+  background-color: #FFFFFF;
+}
+.icon-facebook .f-tail {
+  width: 0.5em;
+  height: 2.1875em;
+  border-top-left-radius: 0.3125em;
+  left: 1.375em;
+  bottom: 0;
+}
+.icon-facebook .f-crossbar {
+  width: 1.25em;
+  height: 0.375em;
+  left: 1em;
+  top: 1.0625em;
+}
+.icon-facebook .f-top {
+  width: 0.625em;
+  height: 0.625em;
+  left: 1.625em;
+  border-top-left-radius: 0.0625em;
+  top: 0.3125em;
+}
+.icon-facebook .f-top:after {
+  content: "";
+  position: absolute;
+  background-color: #3b5998;
+  width: 0.625em;
+  height: 0.375em;
+  border-top-left-radius: 0.125em;
+  top: 0.375em;
+  left: 0.25em;
+}
+/* twitter icon */
+
+.icon-twitter {
+  display: inline-block;
+  overflow: hidden;
+  color: #FFFFFF;
+  background-color: #4099FF;
+  border-radius: 0.3125em;
+  height: 2.5em;
+  width: 2.5em;
+  position: relative;
+}
+.icon-twitter .t-head {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 0.875em;
+  height: 0.875em;
+  border-radius: 0.5625em;
+  left: 1.25em;
+  top: 0.475em;
+}
+.icon-twitter .t-body {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 2em;
+  height: 2em;
+  border-radius: 1.125em;
+  top: 0.0625em;
+  left: 0.125em;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.icon-twitter .t-body:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 2.875em;
+  height: 2.5em;
+  border-radius: 1.4375em / 1.25em;
+  left: -0.6875em;
+  top: -1.0625em;
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+.icon-twitter .t-wing1 {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 1.1875em;
+  height: 1.1875em;
+  border-radius: 0.625em;
+  top: 0.7875em;
+  left: 0.6875em;
+}
+.icon-twitter .t-wing1:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 1.25em;
+  height: 0.9375em;
+  border-radius: 0.625em / 0.46875em;
+  top: -0.1875em;
+  left: -0.5625em;
+}
+.icon-twitter .t-wing2 {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 0.9375em;
+  height: 0.9375em;
+  border-radius: 0.4375em;
+  top: 0.6625em;
+  left: 0.6875em;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  -o-transform: rotate(-9deg);
+  transform: rotate(-9deg);
+}
+.icon-twitter .t-wing2:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 1.625em;
+  height: 0.875em;
+  border-radius: 0.8125em / 0.4375em;
+  top: -0.25em;
+  left: -0.1875em;
+}
+.icon-twitter .t-wing3 {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 1.5em;
+  height: 0.9375em;
+  border-radius: 0.75em / 0.46875em;
+  top: 0.4125em;
+  left: 0.5625em;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.icon-twitter .t-wing3:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 1.4375em;
+  height: 0.875em;
+  border-radius: 0.71875em / 0.4375em;
+  top: -0.1875em;
+  left: -0.125em;
+}
+.icon-twitter .beak-top {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 0.3125em;
+  top: 0.1625em;
+  left: 1.5em;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.icon-twitter .beak-top:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 1.0625em;
+  height: 0.625em;
+  border-radius: 0.53125em / 0.3125em;
+  top: -0.1875em;
+  left: -0.125em;
+}
+.icon-twitter .beak-bottom {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 0.3125em;
+  top: 0.2875em;
+  left: 1.5625em;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.icon-twitter .beak-bottom:after {
+  content: "";
+  position: absolute;
+  background-color: #4099FF;
+  width: 1.0625em;
+  height: 0.625em;
+  border-radius: 0.53125em / 0.3125em;
+  top: -0.1875em;
+  left: -0.125em;
+}
+
+
 img:hover {
+    transform: scale(1);
      animation-name: pulse;
     -webkit-animation-name: pulse;  
 
-    animation-duration: 1.5s;   
-    -webkit-animation-duration: 1.5s;
+    animation-duration: 0.8s;   
+    -webkit-animation-duration: 0.8s;
 
     animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;   
