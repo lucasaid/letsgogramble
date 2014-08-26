@@ -44,8 +44,6 @@ $(document).ready( function(){
   $('#steve').click( function() {
   	var random = Math.floor((Math.random() * 35));
   	var file = 'http://letsgogramble.com/mp3/' + sounds[random] + '.mp3';
-  	console.log(random);
-  	console.log(file);
     try { soundManager.play(sounds[random], file); } catch(err) { return true; }
     try { pageTracker._trackEvent("Sounds", "Play", sounds[random]); } catch(err) {}
     return false;
