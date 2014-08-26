@@ -121,6 +121,10 @@ h2 {
     display:block;
     text-shadow:3px 3px black;
 }
+h2 a {
+  color:white;
+  text-decoration: none;
+}
 img {
     text-align: center;
     margin:auto;
