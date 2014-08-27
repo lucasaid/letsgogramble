@@ -45,7 +45,9 @@ $(document).ready( function(){
   	var random = Math.floor((Math.random() * 35));
   	var file = 'http://letsgogramble.com/mp3/' + sounds[random] + '.mp3';
     try { soundManager.play(sounds[random], file); } catch(err) { return true; }
-    try { pageTracker._trackEvent("Sounds", "Play", sounds[random]); } catch(err) {}
+    try { 
+    	ga('send', 'event', 'Sounds', 'Play', sounds[random], 4);
+    } catch(err) {}
     return false;
   });
 
