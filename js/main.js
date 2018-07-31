@@ -36,7 +36,7 @@ var sounds = [
 	'whowasthefirst',
 ]
 $(document).ready( function(){
-
+  console.log("%cWhat you looking for dingus?","font-family:cursive;font-size: 52px;color:#FD6C0D")
   soundManager.debugMode = false;
   soundManager.url = '/js/soundmanager/';
   soundManager.defaultOptions.volume = 300;
